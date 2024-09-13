@@ -8,15 +8,15 @@ class ExampleTest {
 
     @Test
     void function_A() {
-        new org.example.Example(0,0).Function_A(0);
-        new org.example.Example(0,0).Function_A(1);
-    }
-    
 
+        assertEquals(0,new org.example.Example(0,0).Function_A(0));
+        assertEquals(1, new org.example.Example(0,0).Function_A(1));
+    }
 
     @Test
     void function_B() {
-        new org.example.Example(0,0).Function_B(6);
-        new org.example.Example(0,0).Function_B(5);
+        assertEquals(6,new org.example.Example(0,0).Function_B(6));
+        assertEquals(5,new org.example.Example(0,0).Function_B(5));
     }
+    
 }
